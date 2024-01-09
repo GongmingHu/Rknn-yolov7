@@ -24,29 +24,20 @@ HEADERS += \
     preprocess.h \
     rga_func.h
 
-#3rdparty/opencv/opencv-linux-aarch64/include/opencv2 \
-#3rdparty/opencv/opencv-linux-aarch64/include \
 INCLUDEPATH +=  rknpu2/librknn_api/include \          
                 /home/hgm/VscodeDemo/Multithread-rknn/3568/include/3rdparty/opencv_450/include/opencv4 \
                 3rdparty/rga/include \
                 3rdparty/mpp/include \
                 3rdparty/zlmediakit/include
 
-
-
 LIBS += -lpthread \
         rknpu2/librknn_api/aarch64/librknnrt.so \
-#        3rdparty/opencv/opencv-linux-aarch64/lib/libopencv_calib3d.a \
-#        3rdparty/opencv/opencv-linux-aarch64/lib/libopencv_imgcodecs.a \
-#        3rdparty/opencv/opencv-linux-aarch64/lib/libopencv_video.a \
-#        3rdparty/opencv/opencv-linux-aarch64/lib/libopencv_imgproc.a \
-#        3rdparty/opencv/opencv-linux-aarch64/lib/libopencv_core.a \
-        /home/hgm/VscodeDemo/Multithread-rknn/3568/include/3rdparty/opencv_450/lib/libopencv_core.so \
-        /home/hgm/VscodeDemo/Multithread-rknn/3568/include/3rdparty/opencv_450/lib/libopencv_imgcodecs.so \
-        /home/hgm/VscodeDemo/Multithread-rknn/3568/include/3rdparty/opencv_450/lib/libopencv_video.so \
-        /home/hgm/VscodeDemo/Multithread-rknn/3568/include/3rdparty/opencv_450/lib/libopencv_imgproc.so \
-        /home/hgm/VscodeDemo/Multithread-rknn/3568/include/3rdparty/opencv_450/lib/libopencv_calib3d.so \
-        /home/hgm/VscodeDemo/Multithread-rknn/3568/include/3rdparty/opencv_450/lib/libopencv_highgui.so \
+        3rdparty/opencv_450/lib/libopencv_core.so \
+        3rdparty/opencv_450/lib/libopencv_imgcodecs.so \
+        3rdparty/opencv_450/lib/libopencv_video.so \
+        3rdparty/opencv_450/lib/libopencv_imgproc.so \
+        opencv_450/lib/libopencv_calib3d.so \
+        3rdparty/opencv_450/lib/libopencv_highgui.so \
         3rdparty/rga/libs/Linux/gcc-aarch64/librga.so \
         3rdparty/mpp/Linux/aarch64/librockchip_mpp.so \
         3rdparty/mpp/Linux/aarch64/librockchip_mpp.so.0 \
